@@ -25,7 +25,8 @@ public class WebDriverProvider {
     Configuration.browser = WebDriverProvider.config.browser();
     Configuration.browserVersion = WebDriverProvider.config.browserVersion();
     Configuration.browserSize = WebDriverProvider.config.browserSize();
-    Configuration.holdBrowserOpen = false;
+    Configuration.holdBrowserOpen = Boolean.parseBoolean(WebDriverProvider.config.holdBrowserOpen());
+    Configuration.timeout = Long.parseLong(WebDriverProvider.config.timeout());
 
 
     DesiredCapabilities capabilities = new DesiredCapabilities();

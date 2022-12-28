@@ -37,4 +37,12 @@ public interface WebDriverConfig extends Config {
     @Key("videoStorage")
     @DefaultValue("")
     String videoStorage();
+
+    @Key("holdBrowserOpen")
+    @DefaultValue("false")
+    String holdBrowserOpen();
+
+    @Key("timeout")
+    @DefaultValue("4000")
+    String timeout();
 }
