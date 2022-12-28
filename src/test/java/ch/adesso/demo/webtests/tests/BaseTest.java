@@ -31,12 +31,12 @@ public class BaseTest {
     }
 
     @BeforeEach
-    public void beforeEach() {
+    void beforeEach() {
         SelenideLogger.addListener("AllureSelenide", new AllureSelenide());
     }
 
     @AfterEach
-        void addAttachments() {
+    void addAttachments() {
         AddAttachments.screenshotAs("Last screenshot");
         AddAttachments.addVideo();
         AddAttachments.browserConsoleLogs();
@@ -44,7 +44,7 @@ public class BaseTest {
     }
 
     @AfterEach
-        void clearBrowserCookies() {
+    void clearBrowserCookies() {
         Selenide.clearBrowserCookies();
     }
 }
