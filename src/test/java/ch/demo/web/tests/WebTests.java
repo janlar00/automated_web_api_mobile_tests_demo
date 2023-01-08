@@ -72,7 +72,7 @@ public class WebTests extends BaseTest {
     @Owner("JL")
     @Severity(SeverityLevel.BLOCKER)
     @Link(value = "Testing", url = "https://adesso.ch")
-    @DisplayName("Arbeitswelt bei Adesso prüfen")
+    @DisplayName("Noch ein Test")
     void vacancyCheck()  {
         steps.openStartPage();
         //steps.openAdessoEntdeckenTelecom();
