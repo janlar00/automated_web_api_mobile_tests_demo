@@ -15,7 +15,7 @@ import io.qameta.allure.Severity;
 import io.qameta.allure.SeverityLevel;
 import io.qameta.allure.Story;
 
-public class AdessoWebsiteTests extends BaseTest {
+public class WebTests extends BaseTest {
 
     Steps steps = new Steps();
 
